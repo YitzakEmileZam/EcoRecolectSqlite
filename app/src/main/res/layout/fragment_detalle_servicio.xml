@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecebe5"
+    tools:context=".FragmentsMuestra.DetalleServicioFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ImagenServicio"
+                    android:layout_width="350dp"
+                    android:layout_height="350dp"
+                    android:layout_margin="24dp"
+                    app:srcCompat="@drawable/logo_empresa_ecorecolect_1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tituloTxt"
+                        android:layout_width="330dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center_horizontal"
+                        android:text="Titulo"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="#373b54"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="230dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/grey_bar">
+
+
+                        <TextView
+                            android:id="@+id/precioTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="S/0"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="horizontal">
+
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/descripcionTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:text="Descripción"
+                        android:textColor="#686868"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="0dp"
+                            android:layout_height="65dp"
+                            android:layout_margin="8dp"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/grey_btn_background"
+                            android:elevation="3dp">
+
+                            <TextView
+                                android:id="@+id/textView22"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:text="Precio Total"
+                                android:textColor="#373b54"
+                                android:textSize="15sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:layout_marginLeft="16dp" />
+
+                            <TextView
+                                android:id="@+id/totalPrecioTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:text="S/190.00"
+                                android:textColor="#000000"
+                                android:textSize="23sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView22" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:id="@+id/addToRegisterBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="65dp"
+                            android:layout_margin="8dp"
+                            android:layout_weight="0.5"
+
+                            android:background="@drawable/verde_btn_background"
+                            android:drawableStart="@drawable/baseline_shopping_cart_24"
+                            android:drawablePadding="5dp"
+                            android:elevation="3dp"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:text="Adquirir un servicio"
+                            android:textColor="#ffffff"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:drawableLeft="@drawable/baseline_shopping_cart_24" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

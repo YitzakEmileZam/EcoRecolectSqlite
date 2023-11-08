@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Actividades.ActIniciarSesion">
+
+    <ImageView
+        android:id="@+id/imageView1111"
+        android:layout_width="187dp"
+        android:layout_height="141dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="54dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/logo_empresa_ecorecolect_1"
+        android:transitionName="logoImageTrans"
+        app:layout_constraintBottom_toTopOf="@+id/BienvenidoEcoRecoclect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/BienvenidoEcoRecoclect"
+        android:layout_width="325dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="45dp"
+        android:text="Bienvenido a EcoRecolect"
+        android:textAlignment="center"
+        android:textColor="#4BB543"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:transitionName="textTrans"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView1111"
+        android:gravity="center_horizontal" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="25dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/IniciarSesionBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BienvenidoEcoRecoclect">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edtDNI"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="12dp"
+            android:hint="DNI">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edtContraseña"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="12dp"
+            android:hint="Contraseña"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtContra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/IniciarSesionBtn"
+        android:layout_width="209dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/white_servicios_btn_1"
+        android:elevation="4dp"
+        android:onClick="validarInformacionDelClienteIniciarSesion"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="UnknownIdInLayout">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:onClick="validarInformacionDelClienteIniciarSesion"
+            android:text="INICIAR SESION"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="15dp"
+        android:text="¿Aun no tienes cuenta?"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="15dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="165dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:onClick="registrarmeOnClick"
+        android:text="Registrarme ahora"
+        android:textColor="#5B79D3"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/IniciarSesionBtn" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="65dp"
+        android:text="Administradores"
+        android:textAlignment="center"
+        android:textColor="#4C4822"
+        android:textSize="16sp"
+
+        android:onClick="irAloginAdministradores"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="TouchTargetSizeCheck"
+        android:gravity="center_horizontal" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

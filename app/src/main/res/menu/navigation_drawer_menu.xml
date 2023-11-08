@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_principal"
+            android:title="Principal"
+            android:icon="@drawable/ic_home"/>
+
+        <item
+            android:id="@+id/nav_login"
+            android:title="Log in"
+            android:icon="@drawable/ic_baseline_login_24"/>
+
+        <item
+            android:id="@+id/nav_nosotros"
+            android:title="Quienes somos"
+            android:icon="@drawable/logo_empresa_ecorecolect_1"/>
+
+        <item
+            android:id="@+id/nav_desarrolladores"
+            android:title="Desarrolladores"
+            android:icon="@drawable/ic_baseline_logo_dev_24"/>
+    </group>
+</menu>

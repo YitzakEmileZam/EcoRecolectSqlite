@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_home_administrador"
+        android:title="Principal"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:title=""
+        android:enabled="true"/>
+
+    <item
+        android:id="@+id/bottom_perfil_administrador"
+        android:title="Perfil"
+        android:icon="@drawable/ic_baseline_person_24" />
+
+</menu>

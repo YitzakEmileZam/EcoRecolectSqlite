@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentsMuestra.HomeAdministradorFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView1111"
+                    android:layout_width="350dp"
+                    android:layout_height="350dp"
+                    android:layout_gravity="center"
+
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/logo_empresa_ecorecolect_1_preview"
+                    android:transitionName="logoImageTrans"
+                    app:layout_constraintBottom_toTopOf="@+id/nombreAdm"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/nombreAdm"
+                        android:layout_width="200dp"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text=" Bienvenido Admininistrador"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="110dp"
+                        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.497"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView1111"
+                        android:layout_marginLeft="110dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginBottom="100dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/card_background"
+                    android:elevation="3dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/nombreAdm">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:orientation="vertical">
+
+
+                        <Button
+                            android:id="@+id/btnPDFServicios"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/white_button"
+
+                            android:text="EXPORTAR EN PDF LISTA DE SERVICIOS"
+                            android:textStyle="bold"
+                            app:backgroundTint="#000000"
+                            app:layout_constraintBottom_toTopOf="@+id/btnRecyclerPlatillo"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.78"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/btnEditaClientes"
+                            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+                        <Button
+                            android:id="@+id/btnExcelClientes"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/verde_btn_background"
+
+                            android:text="EXPORTAR EN EXCEL LISTA DE CLIENTES"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            app:backgroundTint="#4BB543"
+                            app:layout_constraintBottom_toTopOf="@+id/btnAgregarPlatillo"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.494"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/btnRecyclerPlatillo"
+                            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

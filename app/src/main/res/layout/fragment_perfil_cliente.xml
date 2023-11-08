@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentsMuestra.PerfilClienteFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="192dp"
+            android:layout_marginRight="192dp"
+            android:layout_marginBottom="20dp"
+            android:text="MIS DATOS PERSONALES"
+            android:textColor="#4BB543"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginEnd="120dp"
+            android:layout_marginRight="120dp"
+            android:layout_marginBottom="27dp"
+            android:text="Aqui se mostrara \ntoda la información de tu cuenta"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/img_foto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitulo" />
+
+        <ImageView
+            android:id="@+id/img_foto"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="141dp"
+            android:layout_marginEnd="141dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="409dp"
+            android:layout_height="210dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="1dp"
+            android:orientation="horizontal"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_foto">
+
+            <LinearLayout
+                android:layout_width="240dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:text="Nombre"
+                    android:textColor="@color/ecorecolect"
+                    android:textStyle="bold"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/txt_nombre"
+                    app:layout_constraintEnd_toStartOf="@+id/txt_nombre"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Apellidos"
+                    android:textStyle="bold"
+                    android:textColor="@color/ecorecolect"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/txt_apellidos"
+                    app:layout_constraintEnd_toStartOf="@+id/txt_apellidos"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:text="Apellidos" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="DNI"
+                    android:textStyle="bold"
+                    android:textColor="@color/ecorecolect"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/txt_dni"
+                    app:layout_constraintEnd_toStartOf="@+id/txt_dni"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:text="DNI" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:text="Email"
+                    android:textStyle="bold"
+                    android:textColor="@color/ecorecolect"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/txt_email"
+                    app:layout_constraintEnd_toStartOf="@+id/txt_email"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:text="Email" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Celular"
+                    android:textStyle="bold"
+                    android:textColor="@color/ecorecolect"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/txt_celular"
+                    app:layout_constraintEnd_toStartOf="@+id/txt_celular"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:text="Celular" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Genero"
+                    android:textStyle="bold"
+                    android:textColor="@color/ecorecolect"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/txt_genero"
+                    app:layout_constraintEnd_toStartOf="@+id/txt_genero"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:text="Genero" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Nombre"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/txt_apellidos"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView15"
+                    app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+                <TextView
+                    android:id="@+id/txt_apellidos"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Apellidos"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/txt_dni"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView16"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_nombre" />
+
+                <TextView
+                    android:id="@+id/txt_dni"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Dni"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/txt_email"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView18"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_apellidos" />
+
+                <TextView
+                    android:id="@+id/txt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="correo"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/txt_celular"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView24"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_dni" />
+
+                <TextView
+                    android:id="@+id/txt_celular"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="numerotelefono"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/txt_genero"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView25"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_email" />
+
+                <TextView
+                    android:id="@+id/txt_genero"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="generooo"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/txt_godpoints"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView26"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_celular" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="221dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textView14"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/logo_empresa_ecorecolect_1_preview"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="16dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
