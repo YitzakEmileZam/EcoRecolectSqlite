@@ -28,8 +28,10 @@ import com.example.proyecto_ecorecolect_aedii.FragmentsMuestra.HomeMuestraFragme
 import com.example.proyecto_ecorecolect_aedii.FragmentsMuestra.MisionMuestraFragment;
 import com.example.proyecto_ecorecolect_aedii.FragmentsMuestra.NosotrosMuestraFragment;
 import com.example.proyecto_ecorecolect_aedii.FragmentsMuestra.VisionMuestraFragment;
+import com.example.proyecto_ecorecolect_aedii.MenuSecundario.ActMenuSecundario;
 import com.example.proyecto_ecorecolect_aedii.Outlook_Email.EmailTask;
 import com.example.proyecto_ecorecolect_aedii.R;
+import com.example.proyecto_ecorecolect_aedii.Secundarias.ActRedes;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationBarView;
@@ -78,6 +80,12 @@ public class ActPrincipalPruebas extends AppCompatActivity implements
             openFragment(new NosotrosMuestraFragment());
         }else if(itemId == R.id.nav_desarrolladores) {
             Intent intent1 = new Intent(this, ActPrincipalDesarrolladores.class);
+            startActivity(intent1);
+        }else if(itemId == R.id.nav_servicios) {
+            Intent intent = new Intent(ActPrincipalPruebas.this, ActMenuSecundario.class);
+            startActivity(intent);
+        }else if(itemId == R.id.nav_redesSociales) {
+            Intent intent1 = new Intent(this, ActRedes.class);
             startActivity(intent1);
         }
         drawer_layout.closeDrawer(GravityCompat.START);

@@ -18,6 +18,22 @@
         android:theme="@style/Theme.Proyecto_EcoRecolect_AEDII"
         tools:targetApi="31">
 
+
+        <activity android:name=".MenuSecundario.ActMenuSecundario"
+            android:exported="false" />
+            />
+
+        <activity android:name=".MenuSecundario.ActRegistrarServicioMS"
+            android:exported="false" />
+        />
+        <activity android:name=".MenuSecundario.ActListarServicioMS"
+            android:exported="false" />
+        />
+
+        <activity android:name=".Secundarias.ActRedes"
+            android:exported="false" />
+        />
+
         <activity
             android:name=".Actividades.ActPrincipalClientes"
             android:exported="true" />

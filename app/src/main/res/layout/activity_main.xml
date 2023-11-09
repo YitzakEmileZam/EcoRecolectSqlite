@@ -72,7 +72,7 @@
         android:layout_height="match_parent"
         android:id="@+id/navigation_drawer"
         android:layout_gravity="start"
-        android:background="@color/black"
+        android:background="@color/colorSuccess"
         app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"
         android:theme="@style/ThemeOverlay.AppCompat."
