@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -17,51 +17,42 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Proyecto_EcoRecolect_AEDII"
         tools:targetApi="31">
-
-
-        <activity android:name=".MenuSecundario.ActMenuSecundario"
+        <activity
+            android:name=".Actividades.ActCrudServicios"
             android:exported="false" />
-            />
-
-        <activity android:name=".MenuSecundario.ActRegistrarServicioMS"
+        <activity
+            android:name=".MenuSecundario.ActMenuSecundario"
             android:exported="false" />
-        />
-        <activity android:name=".MenuSecundario.ActListarServicioMS"
+        <activity
+            android:name=".MenuSecundario.ActRegistrarServicioMS"
             android:exported="false" />
-        />
-
-        <activity android:name=".Secundarias.ActRedes"
+        <activity
+            android:name=".MenuSecundario.ActListarServicioMS"
             android:exported="false" />
-        />
-
+        <activity
+            android:name=".Secundarias.ActRedes"
+            android:exported="false" />
         <activity
             android:name=".Actividades.ActPrincipalClientes"
             android:exported="true" />
-
         <activity
             android:name=".Actividades.ActPrincipalAdministrador"
             android:exported="true" />
-
         <activity
             android:name=".Desarrolladores.ActPrincipalDesarrolladores"
             android:exported="true" />
-
         <activity
             android:name=".Actividades.ActPrincipalPruebas"
             android:exported="true" />
-
         <activity
             android:name=".Actividades.ActRegistrarCliente"
             android:exported="true" />
-
         <activity
             android:name=".Actividades.ActIniciarSesion"
             android:exported="true" />
-
         <activity
             android:name=".Actividades.ActIniciarSesionAdmin"
             android:exported="true" />
-
         <activity
             android:name=".Actividades.ActSplash"
             android:exported="true">
@@ -79,8 +70,6 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
-
-
     </application>
 
 </manifest>

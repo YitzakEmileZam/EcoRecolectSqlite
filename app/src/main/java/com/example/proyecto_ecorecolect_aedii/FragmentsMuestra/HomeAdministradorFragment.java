@@ -1,6 +1,7 @@
 package com.example.proyecto_ecorecolect_aedii.FragmentsMuestra;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 
@@ -17,6 +18,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.proyecto_ecorecolect_aedii.Actividades.ActCrudServicios;
 import com.example.proyecto_ecorecolect_aedii.Actividades.ActPrincipalAdministrador;
 import com.example.proyecto_ecorecolect_aedii.Actividades.ActPrincipalClientes;
 import com.example.proyecto_ecorecolect_aedii.BDSQLite.DAOAdministrador;
@@ -50,13 +52,14 @@ public class HomeAdministradorFragment extends Fragment {
     private String mParam2;
 
 
-
+    Administrador administradorActual;
 
     DAOServicios daoServicios;
     DAOAdministrador daoAdministrador;
     DAOCliente daoCliente;
-    Administrador administradorActual;
+
     ActPrincipalAdministrador activity;
+    private Button btnCrudServicios;
 
     int idAdmin=0;
     ArrayList<Servicios> ListaServicios;
@@ -118,14 +121,31 @@ public class HomeAdministradorFragment extends Fragment {
         AsignarReferencias(rootView);
         ParaPdf();
         ParaExcel();
+        mostrarBotones();
         return rootView;
+
     }
 
+    public void mostrarBotones(){
 
+        btnCRUDSERVICIOS();
 
+    }
+
+    public void btnCRUDSERVICIOS(){
+        btnCrudServicios.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), ActCrudServicios.class);
+                intent.putExtra("idAdmin",idAdmin);
+                startActivity(intent);
+            }
+        });
+    }
     public void AsignarReferencias(View rootView){
         btnPDFServicios= (Button) rootView.findViewById(R.id.btnPDFServicios);
         btnExcelClientes= (Button) rootView.findViewById(R.id.btnExcelClientes);
+        btnCrudServicios= (Button) rootView.findViewById(R.id.btnCrudServicios);
     }
 
     private static final int REQUEST_PERMISSION_WRITE_EXTERNAL_STORAGE = 1;
